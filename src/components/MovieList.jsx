@@ -5,7 +5,7 @@ export const MovieList = ({movies}) => {
     return (        
         <ul className="movie-list">
             {movies?.map(movie => {
-            return <NavLink to={`/${movie.id}`} className={'movie-list-link'} key={movie.id}>
+            return <NavLink to={`/moviedetails/${movie.id}`} className={'movie-list-link'} key={movie.id}>
                     <li>
                         <img src={movie.poster_path ? `https://image.tmdb.org/t/p/w200${movie.poster_path}` : `https://image.tmdb.org/t/p/w200${movie.backdrop_path}`}/>
                         <h2>{movie.title}</h2>

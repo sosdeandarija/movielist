@@ -31,7 +31,7 @@ export const MovieDetails = () => {
             <h2>Original language: {movie.original_language}</h2>
             <h3>Overview: {movie.overview}</h3>
             <h4>Rating: {movie.vote_count} people voted {movie.vote_average}/10</h4>
-            <Link to='/'>
+            <Link to='/home/'>
                 <button className="back-btn">Back</button>
             </Link>
        </div>

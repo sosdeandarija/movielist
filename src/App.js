@@ -25,12 +25,12 @@ function App() {
     <div className='wrapper'>
       <h1>Movie Search App</h1>
       <Routes>
-        <Route path='/' element={<>
+        <Route path='/home/' element={<>
           <SearchBar onSearch={handleSearch}/>
           {movieList ? <MovieList movies={movieList}/> : <h2>Search for movies..</h2>}
           </>
         }/>
-        <Route path='/:id' element={<MovieDetails/>}/>
+        <Route path='/moviedetails/:id' element={<MovieDetails/>}/>
       </Routes>
       
       </div>
