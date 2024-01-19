@@ -25,7 +25,7 @@ function App() {
     <div className='wrapper'>
       <h1>Movie Search App</h1>
       <Routes>
-        <Route path='/movielist' element={<>
+        <Route path='/' element={<>
           <SearchBar onSearch={handleSearch}/>
           {movieList ? <MovieList movies={movieList}/> : <h2>Search for movies..</h2>}
           </>
